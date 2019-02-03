@@ -1,9 +1,16 @@
 <h2>The portal outlet is below:</h2>
-<div class="example-portal-outlet">
-  <ng-template [cdkPortalOutlet]="selectedPortal"></ng-template>
-</div>
-<ng-template #templatePortalContent>Hello, this is a template portal</ng-template>
+
+  <div class="example-portal-outlet">
+    <ng-template [cdkPortalOutlet]="selectedPortal"></ng-template>
+  </div>
+
+<ng-template #templatePortalContent>
+  <div>
+    Hello, this is a template portal
+  </div>
+</ng-template>
 
 <button (click)="selectedPortal = componentPortal">Render component portal</button>
 <button (click)="selectedPortal = templatePortal">Render template portal</button>
+<br><br>
 

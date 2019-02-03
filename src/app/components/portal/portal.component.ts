@@ -22,7 +22,8 @@ export class PortalComponent implements AfterViewInit {
 
 @Component({
   selector: 'app-example-portal-component',
-  template: 'Hello, this is a component portal'
+  template: '<div>Hello, this is a component portal</div>',
+  styleUrls: ['appexample.component.css']
 })
 export class AppExampleComponent {}
 
