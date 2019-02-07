@@ -1,13 +1,12 @@
 .example-portal-outlet {
+  display: inline-block;
   margin-bottom: 10px;
   padding: 10px;
   border: 1px dashed black;
   width: 250px;
   height: 250px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+
   background: lightsteelblue;
 }
 
@@ -17,5 +16,4 @@ div {
   width: 250px;
   height: 250px;
 }
-
 

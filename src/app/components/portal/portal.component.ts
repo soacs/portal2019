@@ -1,4 +1,4 @@
-import {Component, AfterViewInit, TemplateRef, ViewChild, ViewContainerRef} from '@angular/core';
+import {Component, AfterViewInit, TemplateRef, ViewChild, ViewContainerRef, OnInit, OnDestroy} from '@angular/core';
 import {ComponentPortal, Portal, TemplatePortal} from '@angular/cdk/portal';
 
 @Component({
@@ -25,5 +25,16 @@ export class PortalComponent implements AfterViewInit {
   template: '<div>Hello, this is a component portal</div>',
   styleUrls: ['appexample.component.css']
 })
-export class AppExampleComponent {}
+export class AppExampleComponent implements OnInit, OnDestroy {
+
+  ngOnInit() {
+    console.log('init');
+  }
+
+  ngOnDestroy() {
+    console.log('destroy');
+  }
+
+
+}
 
